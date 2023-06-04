@@ -1,9 +1,9 @@
+:root{
 $font-stack:"poppins",sans-serif;
 $primary-color:#59331d;
 $background-color:#d98555;
-
-  
-  body {
+}
+ body {
     background-color: #082B59;
     margin: 0px;
     padding: 0px;
@@ -37,7 +37,6 @@ $background-color:#d98555;
     border-bottom: 10px solid $background-color;
   }
   /* navbar styling */
-  nav{
   nav ul {
     padding: 0px;
     margin: 0px;
@@ -50,6 +49,7 @@ $background-color:#d98555;
     margin: 0 1rem 1rem 1rem;
     font-size: 1.3rem;
   }
+
   /* max width on the image in pixels */
  nav .logo {
       flex-basis: 100%;
@@ -65,7 +65,7 @@ $background-color:#d98555;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 2fr 2fr 2fr;
- }
+ 
     flex-basis: 100%;
     text-align: center;
   }
@@ -77,7 +77,7 @@ $background-color:#d98555;
   nav a:hover {
     color: $background-color;
   }
-}
+
   /* establishes a white background */
   .main-bkgd {
     background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
@@ -134,10 +134,10 @@ $background-color:#d98555;
     color: #f2f2f2;
   }
 }
-  footer {
+  footer{
     color: #f2f2f2;
     text-align: center;
-    border-top: 10px solid $background-color;
+    border-top: 10px solid $background-color;}
   
   footer ul {
     list-style-type: none;
@@ -153,4 +153,3 @@ $background-color:#d98555;
     display: block;
     margin: 0 1rem 3rem 1rem;
   }
-}
