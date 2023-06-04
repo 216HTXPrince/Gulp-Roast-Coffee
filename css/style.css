@@ -1,9 +1,5 @@
-:root{
-$font-stack:"poppins",sans-serif;
-$primary-color:#59331d;
-$background-color:#d98555;
-}
- body {
+
+    body {
     background-color: #082B59;
     margin: 0px;
     padding: 0px;
@@ -11,7 +7,7 @@ $background-color:#d98555;
     line-height: 2;
   }
   h1, h2, h3 {
-    font-family: 100% $font-stack;
+    font-family: 'Poppins', sans-serif;
   }
   h1 {
     font-size: 2rem;
@@ -19,22 +15,25 @@ $background-color:#d98555;
   }
   /* make images flexible */
   img {
-    @media screen and (min-width: 480px) {
-      #leftsidebar {width: 200px; float: left;}
-      #main {margin-left: 216px;}
+    @media screen (min-width: 100px) {
+        .row
+        {display: flex;
+            flex-flow:row wrap;
+            justify-content: space-between}
+        .span{flex-basis: 22%}
       }
-    max-width: 0%;
+    max-width: 100%;
   }
   a {
-    color: $primary-color;
+    color: #59331d;
   }
   a:hover {
     text-decoration: none;
   }
   header {
-    border-bottom: 10px solid $background-color;
+    border-bottom: 10px solid #d98555;
   }
- Nav{
+  /* navbar styling */
   nav ul {
     padding: 0px;
     margin: 0px;
@@ -47,7 +46,8 @@ $background-color:#d98555;
     margin: 0 1rem 1rem 1rem;
     font-size: 1.3rem;
   }
-nav .logo {
+  /* max width on the image in pixels */
+ nav .logo {
       flex-basis: 100%;
       text-align: center;
       
@@ -57,11 +57,11 @@ nav .logo {
     text-align: center;
     max-width: 150px}
   /* flex basis on the image container, li */
-  nav .logo {container} row {
+  nav .logo {container row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr 2fr 2fr 2fr;
- 
+ }
     flex-basis: 100%;
     text-align: center;
   }
@@ -71,16 +71,16 @@ nav .logo {
     display: block;
   }
   nav a:hover {
-    color: $background-color;
+    color: #d98555;
   }
-}
-.main-bkgd {
+  /* establishes a white background */
+  .main-bkgd {
     background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
     padding-bottom: 300px;
   }
   /* sits inside of the white background, centered */
   .main {
-    max-width: calc(100%-100px);
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     display: flex;
@@ -94,18 +94,18 @@ nav .logo {
   }
   figure {margin: 3rem 0 0 0;
     flex-basis: 25%;
-    background-color: $primary-color;
+    background-color: #59331D;
     border-radius: 8px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 0px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    figure img {
+  }
+  figure img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    max-width: 100%;}
+    max-width: 100%;
+
   }
   figcaption {
     color: #f2f2f2;
@@ -113,24 +113,23 @@ nav .logo {
   }
   .button {
     display: inline-block;
-    background-color: $primary-color;
+    background-color: #59331D;
     border-radius: 10px;
     padding: 0.5rem 1rem;
     margin: 0;
     color: #f2f2f2;
     text-decoration: none;
-    border: 3px solid $primary-color;
-  
+    border: 3px solid #59331d;
+  }
   .button:hover {
-    background-color: $background-color;
+    background-color: #d98555;
     color: #f2f2f2;
   }
-}
   footer {
     color: #f2f2f2;
     text-align: center;
-    border-top: 10px solid $background-color;}
-  
+    border-top: 10px solid #d98555;
+  }
   footer ul {
     list-style-type: none;
     padding: 0;
@@ -138,10 +137,10 @@ nav .logo {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+  }
   footer a {
     color: #f2f2f2;
     font-size: 2rem;
     display: block;
     margin: 0 1rem 3rem 1rem;
   }
-}
