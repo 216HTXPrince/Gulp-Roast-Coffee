@@ -19,9 +19,16 @@ $background-color:#d98555;
   }
   /* make images flexible */
   img {
-    @media screen and (min-width: 480px) {
-      #leftsidebar {width: 200px; float: left;}
-      #main {margin-left: 216px;}
+    @media screen (min-width: 100px){
+      .row
+        {display: space-between;
+            flex-flow:row wrap;
+            float: left;
+            margin: 1em 1em 40px 40px;
+            padding: 0px 0px 0px 0px;
+            background-color:#ffffff;
+            justify-content: space-between}
+        .span{flex-basis: 22%}
       }
     max-width: 0%;
   }
@@ -92,19 +99,18 @@ nav .logo {
     margin-left: 10px;
 
   }
-  figure {margin: 3rem 0 0 0;
-    flex-basis: 25%;
-    background-color: $primary-color;
-    border-radius: 8px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
+  figure {width:300px;
+    height: 500px;
+    background-color: #59331D;
+    padding-bottom: 75px;
+    border-radius:10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: centered}
+
     figure img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
     max-width: 100%;}
   }
   figcaption {
